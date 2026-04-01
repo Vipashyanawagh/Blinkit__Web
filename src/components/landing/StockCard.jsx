@@ -2,15 +2,35 @@ import React from 'react'
 
 function StockCard() {
   return (
-    <div className='bg-green-700 w-330 ml-15  h-70 mt-10 rounded-2xl bg-linear-to-l from-green-600 to-green-800  flex  '>
-        <div className='text-white   '>
-            <h1 className='text-5xl ml-9  pt-7 font-semibold '>Stock up on daily essentails</h1>
-            <p className='text-3xl w-170 ml-9 pt-5  '>Get farm-fresh goodness & a range of exotic fruits, vegetables, eggs & more</p>
-            <button className='bg-white ml-9 mt-5  text-gray-800 px-6 py-3 rounded-lg font-semibold shadow hover:scale-105 transition '>Shop Now</button>
-        </div>
-        <div className=' '>
-            <img  className=' mt-10 ml-15 rounded-2xl w-130 h-50  'src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjkuhBrICyVmte1-PFpaucW82vd6lsmkfxw&s"></img>
-        </div>
+    <div
+      className='relative w-[1330px] h-[300px] mt-10 ml-15 rounded-2xl overflow-hidden flex items-center px-12'
+      
+      style={{
+        backgroundImage: `
+          linear-gradient(to right, #0f7a36 35%, rgba(15,122,54,0.85) 40%, rgba(15,122,54,0.3) 65%, transparent),
+          url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjkuhBrICyVmte1-PFpaucW82vd6lsmkfxw&s")
+        `,
+        backgroundSize: "cover",
+        backgroundPosition: "right center",
+      }}
+    >
+      
+      {/* TEXT */}
+      <div className='text-white max-w-[55%] z-10'>
+        <h1 className='text-5xl font-bold leading-tight'>
+          Stock up on daily essentials
+        </h1>
+
+        <p className='text-3xl pt-5 text-gray-100'>
+          Get farm-fresh goodness & a range of exotic
+          <p> fruits, vegetables, eggs & more</p>
+        </p>
+
+        <button className='bg-white mt-6 text-gray-800 px-6 py-3 rounded-lg font-semibold shadow hover:scale-105 transition'>
+          Shop Now
+        </button>
+      </div>
+
     </div>
   )
 }

@@ -3,7 +3,7 @@ import React from 'react'
 function StockCard() {
   return (
     <div
-      className='relative w-[1330px] h-[300px] mt-10 ml-15 rounded-2xl overflow-hidden flex items-center px-12'
+      className='relative w-full z-0 h-[300px] mt-10 ml-15 rounded-2xl overflow-hidden flex items-center px-12'
       
       style={{
         backgroundImage: `
@@ -12,6 +12,7 @@ function StockCard() {
         `,
         backgroundSize: "cover",
         backgroundPosition: "right center",
+        backgroundRepeat: "no-repeat"
       }}
     >
       

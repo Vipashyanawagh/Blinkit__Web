@@ -8,6 +8,7 @@ import Footer1 from '../components/landing/Footer1'
 import Footer from '../components/landing/Footer'
 import Cardbox from '../components/landing/Cardbox'
 import MilkCards from '../components/landing/MilkCards'
+import MilkCards1 from '../components/MilkCards1'
 
 function Landing() {
   return (
@@ -15,7 +16,7 @@ function Landing() {
 
       <Navbar />
       <MilkCards/>
-      
+     
 
       {/*<StockCard/>
      <Cardbox />

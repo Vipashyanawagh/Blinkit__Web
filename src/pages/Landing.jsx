@@ -7,20 +7,23 @@ import CardPlate1 from '../components/landing/CardPlate1'
 import Footer1 from '../components/landing/Footer1'
 import Footer from '../components/landing/Footer'
 import Cardbox from '../components/landing/Cardbox'
+import MilkCards from '../components/landing/MilkCards'
 
 function Landing() {
   return (
     <div>
 
       <Navbar />
-     
-     <StockCard/>
+      <MilkCards/>
+      
+
+      {/*<StockCard/>
      <Cardbox />
      <CardPlate/>
      <CardPlate1/>
      <Footer/>
-     <Footer1/>
- 
+     <Footer1/> */}
+     
     </div>
   )
 }

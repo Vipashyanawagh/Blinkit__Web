@@ -80,7 +80,7 @@ export default function Navbar() {
   return (
     <>
       {/* NAVBAR */}
-      <div className="w-full bg-white shadow-sm px-4 md:px-6 py-3 flex items-center justify-between">
+      <div className="w-full bg-white shadow-sm px-4 md:px-6 py-3 flex items-center justify-between fixed top-0 left-0 ">
         {/* Left */}
         <div className="flex items-center gap-4 md:gap-6">
           <h1 className="text-yellow-500 font-bold text-3xl md:text-5xl">

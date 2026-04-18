@@ -9,21 +9,33 @@ import Footer from '../components/landing/Footer'
 import Cardbox from '../components/landing/Cardbox'
 import MilkCards from '../components/landing/MilkCards'
 import MilkCards1 from '../components/MilkCards1'
+import BodyCards from '../components/landing/BodyCards'
 
 function Landing() {
   return (
     <div>
 
       <Navbar />
-      <MilkCards/>
+      <StockCard/>
+     <Cardbox />
+     <CardPlate/>
+     <CardPlate1/>
+     <BodyCards/>
+     <Footer/>
+     <Footer1/> 
+    
      
 
-      {/*<StockCard/>
+      {/*
+     <StockCard/>
      <Cardbox />
      <CardPlate/>
      <CardPlate1/>
      <Footer/>
-     <Footer1/> */}
+     <Footer1/> 
+    <MilkCards/>
+     
+     */}
      
     </div>
   )

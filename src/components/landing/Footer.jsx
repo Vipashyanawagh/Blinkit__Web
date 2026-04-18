@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div className='ml-10 pl-10'>
-    <div className=' mt-10  pb-5  flex  '>
+    <div className=' mt-15  pb-5  flex  '>
          <div>
           <h1 className='ml-10  text-2xl font-semibold '>Useful Links </h1>
           

@@ -1,7 +1,8 @@
 import React from 'react'
-
+import { NavLink } from "react-router-dom"; 
 function CardPlate() {
   return (
+    <NavLink to={"/cn"}>
     <div className='h-50 flex justify-around  pt-5  mt-5 '>
         <div>
       <img  className='h-30 ml-10 rounded-2xl 'src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmhxfq4_FHQRDPhp7Hu2AvQ5YrDdBAu1sNTA&s"></img> 
@@ -61,6 +62,7 @@ function CardPlate() {
 
 
     </div>
+    </NavLink>
   )
 }
 

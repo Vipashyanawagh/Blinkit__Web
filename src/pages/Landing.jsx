@@ -10,6 +10,7 @@ import Cardbox from '../components/landing/Cardbox'
 import MilkCards from '../components/landing/MilkCards'
 import MilkCards1 from '../components/MilkCards1'
 import BodyCards from '../components/landing/BodyCards'
+import CardSection from '../components/landing/CardSection'
 
 function Landing() {
   return (
@@ -18,11 +19,13 @@ function Landing() {
       <Navbar />
       <StockCard/>
      <Cardbox />
+     
      <CardPlate/>
      <CardPlate1/>
      <BodyCards/>
      <Footer/>
      <Footer1/> 
+   
     
      
 
@@ -34,6 +37,7 @@ function Landing() {
      <Footer/>
      <Footer1/> 
     <MilkCards/>
+    
      
      */}
      

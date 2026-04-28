@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ShoppingCart, Search, ArrowLeft } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -111,18 +112,20 @@ export default function Navbar() {
 
         {/* Right */}
         <div className="flex items-center gap-4 md:gap-6">
+          <NavLink to = {"/login"}>
           <button
             onClick={() => setShow(true)}
             className="text-gray-700 font-medium text-sm md:text-xl"
           >
             Login
           </button>
+          </NavLink>
 
           <button
             onClick={showitems}
             className="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg text-gray-600"
           >
-            <ShoppingCart size={20} />
+            <ShoppingCart size={20}/>
             <span className="hidden md:block">My Cart</span>
           </button>
         </div>
@@ -174,6 +177,24 @@ export default function Navbar() {
           className="w-full outline-none"
         />
       </div>
+
+      <div  className='flex border rounded-xl px-4 py-3 mb-4'>
+        <input className='mr-2 text-gray-600'
+        text='email' 
+        placeholder="Enter your email"
+        className="w-full outline-none"
+           />
+      </div>
+      <div  className='flex border rounded-xl px-4 py-3 mb-4'>
+        <input className='mr-2 text-gray-600'
+        password='password' 
+        placeholder="Enter your password"
+        className="w-full outline-none"
+           />
+      </div>
+
+
+
 
       <button
         disabled={mobile.length !== 10}

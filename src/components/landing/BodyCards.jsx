@@ -1,6 +1,15 @@
 import React from 'react'
 
 function BodyCards() {
+    
+   
+     
+     
+    
+
+    
+    
+    
     return (
 
           <div>
@@ -665,9 +674,9 @@ function BodyCards() {
 
 
      {/*Text Content */}
-        <di>
+        <div>
             
-        </di>
+        </div>
 
 
 

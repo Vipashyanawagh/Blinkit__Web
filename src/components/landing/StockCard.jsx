@@ -24,7 +24,7 @@ function StockCard() {
 
         <p className='text-3xl pt-5 text-gray-100'>
           Get farm-fresh goodness & a range of exotic
-          <p> fruits, vegetables, eggs & more</p>
+          <span> fruits, vegetables, eggs & more</span>
         </p>
 
         <button className='bg-white mt-6 text-gray-800 px-6 py-3 rounded-lg font-semibold shadow hover:scale-105 transition'>

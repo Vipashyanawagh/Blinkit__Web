@@ -11,6 +11,7 @@ import MilkCards from '../components/landing/MilkCards'
 import MilkCards1 from '../components/MilkCards1'
 import BodyCards from '../components/landing/BodyCards'
 import CardSection from '../components/landing/CardSection'
+import SignupPage from '../components/landing/SignupPage'
 
 function Landing() {
   return (

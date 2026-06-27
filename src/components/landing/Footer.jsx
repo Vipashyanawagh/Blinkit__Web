@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -44,7 +45,7 @@ function Footer() {
 
 
           <div>
-            <h1 className=' pl-25 text-2xl  font-semibold  '>Categories <span className='text-green-600 text-lg pl-3'>see all</span></h1>
+            <h1 className=' pl-25 text-2xl  font-semibold  '>Categories <span className='text-green-600 text-lg pl-3'> <NavLink to="/categories"> see all</NavLink></span></h1>
             <div className='flex'>
               <div className='ml-25 mt-5 text-gray-600'>
                 <ul>

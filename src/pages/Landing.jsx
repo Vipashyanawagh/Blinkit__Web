@@ -12,6 +12,7 @@ import MilkCards1 from '../components/MilkCards1'
 import BodyCards from '../components/landing/BodyCards'
 import CardSection from '../components/landing/CardSection'
 import SignupPage from '../components/landing/SignupPage'
+import CategoryPage from '../components/landing/CategoryPage'
 
 function Landing() {
   return (
@@ -26,8 +27,7 @@ function Landing() {
      <BodyCards/>
      <Footer/>
      <Footer1/> 
-     <SignupPage/>
-   
+     
     
      
 

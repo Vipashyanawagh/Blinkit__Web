@@ -6,7 +6,29 @@ import React, { useState } from "react";
 
 export  default function SignupPage() {
 
+const [signup, setSignup] = useState({
+ 
+  email: "",
+  tel:" ",
+  password: "",
 
+})
+
+const handleChange = (e) => {
+  const { name, value } = e.target;
+
+  const copySignup = { ...signup };
+  copySignup[name] = value;
+  setSignup(copySignup);
+};
+
+console.log("signup ->", signup);
+  
+  const handleSignup = (e) =>{
+    e.preventDefalut();
+  }
+
+ const [show , setShow] = useState(true);
  
   
   
@@ -15,9 +37,9 @@ export  default function SignupPage() {
     <>
     
       <div className="min-h-screen bg-black/40 flex items-center justify-center">  
-      <div  
+      <div  onSubmit={handleSignup}
         className="bg-white w-[400px] rounded-2xl shadow-xl p-8 relative">
-        <button className="absolute left-4 top-4 text-gray-600 hover:text-black"    onClick={ () => setShow(true) } >←</button>
+        <button className="absolute left-4 top-4 text-gray-600 hover:text-black"   onClick={ () => setShow(false) } >←</button>
 
         {/* Logo */}
         <div className="flex justify-center mb-4">
@@ -32,22 +54,38 @@ export  default function SignupPage() {
 
         {/* Username */}
         <div className="mb-4">
-          <input type="text" placeholder="Enter username" className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+          <input 
+          type="name"
+          name="text"
+          onChange={handleChange} 
+          placeholder="Enter username"
+          className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400" />
         </div>
 
         {/* Email */}
         <div className="mb-4">
-          <input type="email" placeholder="Enter email" className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+          <input 
+          type="email" 
+          name="email"
+          onChange={handleChange}
+          placeholder="Enter email" 
+          className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400" />
         </div>
 
         {/* Mobile */}
         <div className="mb-4">
-          <input type="tel" placeholder="Enter mobile number" className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+          <input
+          type="tel" 
+          name="tel"
+          onChange={handleChange}
+          placeholder="Enter mobile number" 
+          className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400" />
         </div>
 
         {/* Role */}
         <div className="mb-4">
           <select className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400">
+            
             <option value="">Select role</option>
             <option value="user">User</option>
             <option value="admin">Admin</option>
@@ -56,7 +94,12 @@ export  default function SignupPage() {
 
         {/* Password */}
         <div className="mb-6">
-          <input type="password" placeholder="Enter password" className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+          <input 
+          type="password" 
+          name="password"
+          onChange={handleChange}
+          placeholder="Enter password" 
+          className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400" />
         </div>
 
         {/* Signup Button */}

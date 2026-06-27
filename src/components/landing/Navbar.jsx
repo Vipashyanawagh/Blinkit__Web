@@ -24,6 +24,10 @@ export default function Navbar() {
   }
   console.log("loginInfo -> ", loginInfo);
 
+  const handleLogin = (e) =>{
+    e.preventDefalut();
+  }
+
 
   const [show, setShow] = useState(false);
 
@@ -107,7 +111,7 @@ export default function Navbar() {
 
       {/* LOGIN MODAL */}
       {show && (
-        <div
+        <div  onSubmit={handleLogin}
           onClick={() => setShow(false)}
           className="fixed inset-0 bg-black/40 flex items-center justify-center z-50 px-4"
         >
@@ -189,9 +193,9 @@ export default function Navbar() {
             </div>
 
             {/* CONTINUE BUTTON */}
-            <button
-              disabled={mobile.length !== 10}
-              className={`w-full py-3 rounded-xl text-white font-medium transition-all duration-300 ${mobile.length === 10
+            <button type="submit"
+              disabled={loginInfo.tel.length !== 10}
+              className={`w-full py-3 rounded-xl text-white font-medium transition-all duration-300 ${loginInfo.tel.length === 10
                 ? "bg-green-600 hover:bg-green-700"
                 : "bg-gray-400 cursor-not-allowed"
                 }`}

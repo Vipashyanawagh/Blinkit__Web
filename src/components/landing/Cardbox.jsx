@@ -42,10 +42,9 @@ export default function Cardbox() {
         {/* CARD 2 */}
        
          <div className="w-100 bg-gradient-to-b from-cyan-400 to-blue-500  rounded-3xl p-8 flex items-center justify-between shadow-lg">
-       
           <div className="text-white">
             <h1 className="text-2xl font-bold w-50">
-              Get printouts delivered
+             Pharmacy at your doorstep! 
             </h1>
 
             <div className="space-y-2 mb-4 mt-1">
@@ -64,11 +63,11 @@ export default function Cardbox() {
               Order Now
             </button>
           </div>
-
+          
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpWMehTovEjF-EtEiHv78wJ_6kHDId7fvmQA&s"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4abY8AVPUzpRAyes21G6y2xolRHg88un1BS2YtN15g&s=10"
             alt="printer"
-            className="h-40 rounded-md"
+            className="h-40 rounded-md w-150"
           />
          
         </div>
@@ -77,18 +76,18 @@ export default function Cardbox() {
        
           <div className="text-white">
             <h1 className="text-2xl font-bold w-50">
-              Get printouts delivered
+             Pet Care suppies at your door
             </h1>
 
             <div className="space-y-2 mb-4 mt-1">
               <div className="flex items-center gap-2">
                 <CheckCircle size={18} />
-                <span>Safe & secure</span>
+                <span>Food ,treats,</span>
               </div>
 
               <div className="flex items-center gap-2">
                 <CheckCircle size={18} />
-                <span>Convenient & Fast</span>
+                <span> Toys, and more</span>
               </div>
             </div>
 
@@ -98,9 +97,9 @@ export default function Cardbox() {
           </div>
 
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpWMehTovEjF-EtEiHv78wJ_6kHDId7fvmQA&s"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdVZhl6zzvAxnl1stZcG4PRSxkfCV23ki_pjTFSVU9SQ&s=10"
             alt="printer"
-            className="h-40 rounded-md"
+            className="h-40 rounded-md w-45"
           />
          
         </div>

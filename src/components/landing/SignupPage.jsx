@@ -7,14 +7,14 @@ import React, { useState } from "react";
 export  default function SignupPage() {
 
 
-  const [show, setShow] = useState(false);
-
+ 
   
   
 
   return (
     <>
-    { show && (<div className="min-h-screen bg-black/40 flex items-center justify-center">  
+    
+      <div className="min-h-screen bg-black/40 flex items-center justify-center">  
       <div  
         className="bg-white w-[400px] rounded-2xl shadow-xl p-8 relative">
         <button className="absolute left-4 top-4 text-gray-600 hover:text-black"    onClick={ () => setShow(true) } >←</button>
@@ -70,7 +70,7 @@ export  default function SignupPage() {
         </p>
       </div>
     </div>
-  )}
+
   </>
     
   );

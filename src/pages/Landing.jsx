@@ -26,6 +26,7 @@ function Landing() {
      <BodyCards/>
      <Footer/>
      <Footer1/> 
+     <SignupPage/>
    
     
      

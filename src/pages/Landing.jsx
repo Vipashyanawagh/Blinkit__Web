@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from "react";
 import { Airplay } from 'lucide-react'
 import Navbar from '../components/landing/Navbar'
 import StockCard from '../components/landing/StockCard'
@@ -15,21 +16,25 @@ import SignupPage from '../components/landing/SignupPage'
 import CategoryPage from '../components/landing/CategoryPage'
 
 function Landing() {
-  return (
-    <div>
 
-      <Navbar />
+  const [cart, setCart] = useState([]);
+
+  return (
+
+    <div>
+     
+       <Navbar cart={cart} setCart={setCart} />
+
       <StockCard/>
      <Cardbox />
      
      <CardPlate/>
      <CardPlate1/>
-     <BodyCards/>
+      <BodyCards cart={cart} setCart={setCart} />
      <Footer/>
      <Footer1/> 
      
     
-     
 
       {/*
      <StockCard/>

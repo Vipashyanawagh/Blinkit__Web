@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 
 
-export default function Navbar() {
+export default function Navbar({ cart = [], setCart }) {
 
   const [loginInfo, setLoginInfo] = useState({
     tel: "",
@@ -38,18 +38,11 @@ export default function Navbar() {
   // Mobile Validation
 
 
-  const cartItems = [
-    {
-      id: 1,
-      name: "Product 1",
-      price: 100,
-    },
-    {
-      id: 2,
-      name: "Product 2",
-      price: 200,
-    },
-  ];
+  
+const total = cart.reduce(
+  (sum, item) => sum + item.price * item.quantity,
+  0
+);
 
   return (
     <>
@@ -211,6 +204,44 @@ export default function Navbar() {
 
 
       {/* CART MODAL */}
+      {add && (
+  <div
+    className="fixed inset-0 bg-black/40 flex justify-end z-50"
+    onClick={() => setAdd(false)}
+  >
+    <div
+      className="bg-white w-[400px] h-full p-5 overflow-y-auto"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <h2 className="text-2xl font-bold mb-5">
+        My Cart
+      </h2>
+
+      {cart.length === 0 ? (
+        <p>Your cart is empty</p>
+      ) : (
+        <>
+          {cart.map((item) => (
+            <div
+              key={item.id}
+              className="flex justify-between border-b py-4"
+            >
+              <div>
+                <h3>{item.name}</h3>
+                <p>₹{item.price}</p>
+                <p>Qty : {item.quantity}</p>
+              </div>
+            </div>
+          ))}
+
+          <h3 className="mt-5 font-bold">
+            Total : ₹{total}
+          </h3>
+        </>
+      )}
+    </div>
+  </div>
+)}
 
 
     </>

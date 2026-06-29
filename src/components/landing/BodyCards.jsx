@@ -1,8 +1,26 @@
-import React from 'react'
+import React , { useState } from 'react'
 
 function BodyCards() {
     
-   
+    const products = [
+        {
+            id : 1,
+            name: "Alphonso Mango Ratnagiri",
+            price:29,
+            images:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU6wJb1_2i9rQBUresmpKtjR4tlioe3fwmxQ&s"
+
+        },
+
+    ],
+    <div className="flex flex-wrap gap-4">
+  {products.map((product) => (
+    <ProductCard
+      key={product.id}
+      product={product}
+      addToCart={addToCart}
+    />
+  ))}
+</div>
      
      
     
@@ -43,7 +61,9 @@ function BodyCards() {
                    
                     <div className='flex justify-between  mt-8 '>
                         <p className='ml-5 text-sm font-bold  '>₹29</p>
-                        <button className='border rounded-md  bg-green-100  border-green-600 w-[75px] mr-5 px-2  py-1 '>Add</button>
+                        <button 
+                        className='border rounded-md  bg-green-100  border-green-600 w-[75px] mr-5 px-2  py-1 '>
+                        Add</button>
                     </div>
                    
                     </div>

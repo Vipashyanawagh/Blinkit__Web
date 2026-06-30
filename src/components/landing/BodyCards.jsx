@@ -29,7 +29,10 @@ export default function BodyCards({ cart, setCart }) {
     },
     {
         id: 2,
-        name: ""
+        name: "All Vegetables",
+        price:69,
+        image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMx0O9uOsUOqax8U-htYO1d1TlU-AEEtbwLQ&s "
     }
 ];
 
